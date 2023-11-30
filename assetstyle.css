@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("IMAGES/5137894.png");
+		-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+.menu{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+.menu .head{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    width: 100%;
+    list-style: none;
+}
+ul li{
+    display: block;
+    width: 100%;
+}
+ul li a{
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+ul li:hover a{
+    background: #030303;
+    color: aqua;
+    letter-spacing: 5px;
+}
+.app{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+span{
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: aqua;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+}
+#bars{
+    background: #000;
+}
+#check:checked ~ .menu{
+    transform: translateX(0);
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+button {
+     background-color: aqua;
+	color: black;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 30px;
+	transition: .4s;
+    width: 200px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+button a:hover{
+    background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+.edit-button{
+    width: 200px;
+    color: deeppink;
+}
+.delete-button{
+    color: aqua;
+}

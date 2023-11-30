@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("IMAGES/5137894.png");
+		-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+.menu{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+.menu .head{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    width: 100%;
+    list-style: none;
+}
+ul li{
+    display: block;
+    width: 100%;
+}
+ul li a{
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+ul li:hover a{
+    background: #030303;
+    color: aqua;
+    letter-spacing: 5px;
+}
+.app{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+span{
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 30px;
+    border-radius: 3px;
+    color: aqua;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+}
+#bars{
+    background: #000;
+}
+#check:checked ~ .menu{
+    transform: translateX(0);
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: #191919;
+    border-radius: 4px;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+#form h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 4px;
+}
+#form button:hover{
+    background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+#form button a{
+    text-decoration: none;
+    color: black;
+}
+#form .btn{
+     padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 4px;
+}
+#form .btn:hover{
+     background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+.input-control img{
+	width: 25px;
+	cursor: pointer;
+   position: absolute;
+    right: 650px;
+   color: black;
+   
+}
+
+header{
+    align-content: center;
+    display:block;
+    padding: 30px;
+}
+header h1{
+    color: white;
+    padding: 20px;
+}
+.manager{
+    color: aqua;
+}
+i{
+	font-size: 30px;
+	padding: 25px;
+	color: aqua;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 355px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+		
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: aqua;
+}
+.pra p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	 background-color: aqua;
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s;
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.manager{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.cards .display{
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    border: 1px solid white;
+    background-position: center;
+    background-size: cover;
+}
+.cards .display img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+.cards{
+    height: 500px;
+	width: 800px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+    padding: 5px;
+	position: relative;
+	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+	font-size: 18px;	
+}
+.cards input{
+    width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.cards .add{
+	 background-color: aqua;
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s;
+    width: 200px;
+}
+.cards .add:hover{
+	background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+.cards .btn{
+     padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 4px;
+}
+.cards .btn:hover{
+    background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+.controlbuttons button a{
+     background-color: aqua;
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s;
+    width: 500px;
+     text-decoration: none;
+}
+
+.controlbuttons button a:hover{
+    background-color: transparent;
+	border: 2px solid aqua;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	 justify-content: center;
+    
+}
+.about{
+    color: white;
+    margin: 40px;
+    font-size: 20px;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+.btn{
+     padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 4px;
+}
